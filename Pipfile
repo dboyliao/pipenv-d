@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pipenv-d = {editable = true, path = "."}
+
+[dev-packages]
+flake8 = "*"
+pylint = "*"
+black = "*"
+twine = "*"
+
+[requires]
+python_version = "3.9"
+
+[pipenv]
+allow_prereleases = true
