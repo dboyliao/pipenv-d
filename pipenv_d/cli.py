@@ -11,7 +11,7 @@ if not LOCKFILE_DIR.exists():
 
 
 def _run_pipenv():
-    pipenv_cmd = ["pipenv"] + sys.argv[1:]
+    pipenv_cmd = [sys.executable, "-m", "pipenv"] + sys.argv[1:]
     return subprocess.call(pipenv_cmd)
 
 

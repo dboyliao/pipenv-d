@@ -14,9 +14,15 @@ def _get_version():
     return ns["__version__"]
 
 
+with open("./README.md", "r") as fid:
+    LONG_DESCRIPTION = fid.read()
+
 setup(
     name="pipenv-d",
     version=_get_version(),
+    description="dirty hack of pipenv",
+    long_description=LONG_DESCRIPTION,
+    long_description_content_type="text/markdown",
     packages=find_packages("."),
     install_requires=["pipenv"],
     author="dboyliao",
