@@ -2,11 +2,11 @@
 
 `pipenv-d` is a dirty hack of [`pipenv`](https://pipenv.pypa.io/en/latest/).
 
-TL;DR, I want [this feature](https://github.com/pypa/pipenv/issues/5130), `pipenv` can support multiple platform-specific lock file.
+TL;DR, I want [this feature](https://github.com/pypa/pipenv/issues/5130), so `pipenv` can support multiple platform-specific lock files.
 
-Why? Because some of my colleagues are using `x86_64` machine and some are using Apple silicon (such as `m1`). As a result, when some of them lock dependencies on one machine, high chances is that the lock file may not work on the other, especially for machine learning applications whcih rely on extension modules (`Cython`, `pybind11`, `Numba`..etc) heavily which are very platform-specific.
+Why? Because some of my colleagues are using `x86_64` machine and some are using Apple silicon (such as `m1`). As a result, when some of them lock dependencies on one machine, high chances is that the lock file may not work on the others, especially for machine learning applications which heavily rely on extension modules (`Cython`, `pybind11`, `Numba`..etc) and are very platform-specific.
 
-I am just so tired of fixing such dependency issues for them. I NEED platform-specific lock file support ASAP.
+I am just so tired of fixing dependency issues for them. I NEED platform-specific lock file support ASAP.
 
 ## Installation
 
